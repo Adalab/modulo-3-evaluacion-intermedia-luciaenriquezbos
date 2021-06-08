@@ -3,9 +3,9 @@ import Pokemon from "./Pokemon";
 import "../stylesheets/App.css";
 
 const PokeList = (props) => {
-  const pokeItems = props.list.map((item, index) => {
+  const pokeItems = props.list.map((item, id) => {
     return (
-      <li key={index}>
+      <li key={id}>
         <Pokemon item={item} />
       </li>
     );
