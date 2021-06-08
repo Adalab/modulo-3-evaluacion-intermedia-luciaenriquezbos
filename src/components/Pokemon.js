@@ -12,8 +12,11 @@ const Pokemon = (pokeItems) => {
   return (
     <div>
       <article>
-        <h4>{pokeItems.item.name}</h4>
-        <ul>pokemontypes</ul>
+        <img
+          src={pokeItems.item.url}
+          alt={"Imagen de" + pokeItems.item.name}></img>
+        <h3>{pokeItems.item.name}</h3>
+        <h4>{pokeItems.item.types}</h4>
       </article>
     </div>
   );
