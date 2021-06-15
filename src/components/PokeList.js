@@ -5,7 +5,7 @@ import "../stylesheets/App.css";
 const PokeList = (props) => {
   const pokeItems = props.list.map((item, id) => {
     return (
-      <li key={id}>
+      <li class="classlist" key={id}>
         <Pokemon item={item} />
       </li>
     );
